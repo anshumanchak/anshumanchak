@@ -1,0 +1,95 @@
+@import url('//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css');
+#social {
+    text-align: center;
+}
+
+.sm_btn {
+    display: inline-block;
+    cursor: pointer;
+    width: 2.2rem;
+    height: 2.2rem;
+    padding: 0;
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+    text-decoration: none;
+    text-align: center;
+    color: #9B9B9B;
+    font-size: 1.2rem;
+    font-weight: normal;
+    line-height: 2rem;
+    border-radius: 1.15rem;
+    -moz-border-radius: 1.1rem;
+    -webkit-border-radius: 1.1rem;
+    background: white;
+    border: 0.09rem solid #3F3F3F;
+}
+
+.sm_btn:hover {
+    text-decoration: none;
+}
+
+.facebook_btn:before {
+    font-family: "FontAwesome";
+    content: "\f09a";
+}
+
+.facebook_btn:hover {
+    color: #4060A5;
+    background: #fff;
+    border-color: black;
+}
+
+.twitter_btn:before {
+    font-family: "FontAwesome";
+    content: "\f099";
+}
+
+.twitter_btn:hover {
+    color: #00ABE3;
+    background: #fff;
+    border-color: black;
+}
+
+.github_btn:before {
+    font-family: "FontAwesome";
+    content: "\f09b";
+}
+
+.github_btn:hover {
+    color: black;
+    background: #fff;
+    border-color: black;
+}
+
+.linkedin_btn:before {
+    font-family: "FontAwesome";
+    content: "\f0e1";
+}
+
+.linkedin_btn:hover {
+    color: #0094BC;
+    background: #fff;
+    border-color: black;
+}
+
+.mail_btn:before {
+    font-family: "FontAwesome";
+    content: "\2709";
+}
+
+.mail_btn:hover {
+    color: #D44638;
+    background: #fff;
+    border-color: black;
+}
+
+.instagram_btn:before {
+    font-family: "FontAwesome";
+    content: "\f16d";
+}
+
+.instagram_btn:hover {
+    color: #fe4164;
+    background: #fff;
+    border-color: black;
+}

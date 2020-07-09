@@ -1,0 +1,147 @@
+body {
+    background-color: #e8e8e8;
+    font-family: Lato, Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+hr {
+    border-top: 0.09rem solid #555555;
+    width: 95%;
+}
+
+ul {
+    list-style-position: inside;
+    padding-left: 0.0rem;
+    list-style: square;
+}
+
+.resume {
+    margin-top: 2.2rem;
+}
+
+.jumbotron {
+    background-color: #ffffff !important;
+}
+
+.float_right {
+    float: right;
+}
+
+.float_left {
+    float: left;
+}
+
+.heading_style {
+    text-align: center;
+}
+
+.text_align_justify {
+    text-align: justify;
+}
+
+.heading_font {
+    font-family: Raleway, Arial, Helvetica, sans-serif;
+    font-weight: 50;
+}
+
+.download_btn {
+    color: #b9bcc9;
+    padding: 1rem 1.3rem;
+    font-size: 1.4rem;
+}
+
+.download_btn:hover {
+    color: #9B9B9B;
+}
+
+.parent_div {
+    display: flex;
+    align-items: stretch;
+}
+
+.border_div {
+    display: flex;
+    background-color: #fcfcfc;
+    width: 0.8rem;
+    cursor: pointer;
+}
+
+.border_content {
+    display: flex;
+}
+
+.padding_left {
+    padding-left: 1.6rem;
+}
+
+.padding_right {
+    padding-right: 1.6rem;
+}
+
+.padding_top {
+    padding-top: 0.5rem;
+}
+
+.default_font {
+    font-size: 1rem;
+}
+
+.big {
+    font-size: 1.2rem;
+}
+
+
+
+#open_sidebar {
+    cursor: pointer;
+}
+
+.sidebar {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #F5F5F5;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 1rem;
+}
+
+.canvas_dim{
+    width: 16rem;
+    height: 16rem;
+    padding: 1rem;
+}
+
+.chart_scroll {
+    width: 16.5rem;
+    height: 18rem;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    white-space: nowrap;
+    scroll-snap-type: x mandatory;
+    margin: auto;
+}
+
+.chart_scroll_inner {
+        display: inline-block;
+        vertical-align: middle;
+        scroll-snap-align: start;
+}
+
+::-webkit-scrollbar {
+    height: 0.5rem;
+}
+
+::-webkit-scrollbar-track {
+    border-radius: 0.01rem;
+    background: #eeeeee;
+}
+
+::-webkit-scrollbar-thumb {
+    border-radius: 01rem;
+    background: #b0b0b0;
+}
