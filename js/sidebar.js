@@ -64,14 +64,14 @@ $("html").click(function (event) {
         if (a == open_sidebar_omdena) {
             chart_bar = document.getElementById("chart_bar_omdena");
             chart_text.innerHTML = "Data substantiating Domestic Violence from government resources are only available in summary form. \
-                                    Incidents are largely reported via calls, hence making data collection and subsequent mapping difficult."
-                                    + "<br / >" + 
-                                    "The goal of the challenge was to collect and analyze data from different social media platforms and\
-                                    news sources so as to create a well - formed, reliable data source and gain insights on the rise in\
-                                    DV incidents during the nation - wide lockdown. Links to some awesome articles written by my fellow \
-                                    collaborators are mentioned below :" + 
-                                    "<br />• <a href = 'https://omdena.com/blogs/domestic-violence/'>Twitter Data Analysis</a><br />" +
-                                    "• <a href='https://medium.com/omdena/analyzing-domestic-violence-during-covid-19-through-natural-language-processing-fe1905de744e'>News Data Analysis</a>";
+                                    Incidents are largely reported via calls, hence making data collection and subsequent mapping difficult." +
+                "<br / >" +
+                "The goal of the challenge was to collect and analyze data from different social media platforms and\
+                                    news sources so as to create a well formed, reliable data source and gain insights on the rise in\
+                                    DV incidents during the nationwide lockdown. Links to some awesome articles written by my fellow \
+                                    collaborators are mentioned below :" +
+                "<br />• <a href = 'https://omdena.com/blogs/domestic-violence/'>Twitter Data Analysis</a><br />" +
+                "• <a href='https://medium.com/omdena/analyzing-domestic-violence-during-covid-19-through-natural-language-processing-fe1905de744e'>News Data Analysis</a>";
             // Append everything together
             canvas_dim1.appendChild(chart1);
             canvas_dim2.appendChild(chart2);
@@ -168,13 +168,12 @@ $("html").click(function (event) {
             });
             openNav(chart_bar);
             side_is_open = 1;
-        }
-        else if (a == open_sidebar_bidgely) {
+        } else if (a == open_sidebar_bidgely) {
             chart_bar = document.getElementById("chart_bar_bidgely");
             chart_text.innerHTML = "This was my first time working in a startup environment and I\
                                     thoroughly enjoyed it. Bidgely provides AI based solutions to Utilities \
                                     to create value for both the end consumers and the service providers.<br />\
-                                    I had the opportunity to work on one of their many promising projects - Similar Home \
+                                    I had the opportunity to work on one of their many promising projects, Similar Home \
                                     Comparison(SHC), which helps Bidgely categories houses in different localities on \
                                     the basis of some predetermined parameters to provide better insights regarding \
                                     the power consumption habits.";
@@ -271,7 +270,7 @@ $("html").click(function (event) {
             openNav(chart_bar);
             side_is_open = 1;
         }
-    }else if (side_is_open == 1) {
+    } else if (side_is_open == 1) {
         if (!chart_bar.contains(a)) {
             side_is_open = 0;
             closeNav(chart_bar);
