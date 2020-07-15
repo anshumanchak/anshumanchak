@@ -1,4 +1,3 @@
-@import url('//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css');
 #social {
     text-align: center;
 }
@@ -74,7 +73,7 @@
 
 .mail_btn:before {
     font-family: "FontAwesome";
-    content: "\2709";
+    content: "\f0e0";
 }
 
 .mail_btn:hover {

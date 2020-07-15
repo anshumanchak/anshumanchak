@@ -10,12 +10,6 @@ hr {
     width: 95%;
 }
 
-ul {
-    list-style-position: inside;
-    padding-left: 0.0rem;
-    list-style: square;
-}
-
 .resume {
     margin-top: 2.2rem;
 }
@@ -32,12 +26,12 @@ ul {
     float: left;
 }
 
-.heading_style {
-    text-align: center;
-}
-
 .text_align_justify {
     text-align: justify;
+}
+
+.heading_style {
+    text-align: center;
 }
 
 .heading_font {
@@ -53,22 +47,6 @@ ul {
 
 .download_btn:hover {
     color: #9B9B9B;
-}
-
-.parent_div {
-    display: flex;
-    align-items: stretch;
-}
-
-.border_div {
-    display: flex;
-    background-color: #fcfcfc;
-    width: 0.8rem;
-    cursor: pointer;
-}
-
-.border_content {
-    display: flex;
 }
 
 .padding_left {
@@ -93,12 +71,15 @@ ul {
 
 
 
-#open_sidebar {
+#open_sidebar_omdena {
+    cursor: pointer;
+}
+#open_sidebar_bidgely {
     cursor: pointer;
 }
 
 .sidebar {
-    height: 100%;
+    height: 100vh;
     width: 0;
     position: fixed;
     z-index: 1;
@@ -111,14 +92,16 @@ ul {
 }
 
 .canvas_dim{
-    width: 16rem;
-    height: 16rem;
-    padding: 1rem;
+    width: 42vh;
+    height: 42vh;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-bottom: 1.3rem;
 }
 
 .chart_scroll {
-    width: 16.5rem;
-    height: 18rem;
+    width: 42vh;
+    height: 44vh;
     overflow-x: scroll;
     overflow-y: hidden;
     white-space: nowrap;
@@ -131,17 +114,26 @@ ul {
         vertical-align: middle;
         scroll-snap-align: start;
 }
+.sidebar_head1 {
+    font-family: Raleway, Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+
+.sidebar_head2 {
+    font-family: Raleway, Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
 
 ::-webkit-scrollbar {
     height: 0.5rem;
 }
-
 ::-webkit-scrollbar-track {
-    border-radius: 0.01rem;
     background: #eeeeee;
 }
-
 ::-webkit-scrollbar-thumb {
-    border-radius: 01rem;
     background: #b0b0b0;
 }
+::-webkit-scrollbar-thumb:horizontal {
+        border-radius: 01rem;
+}
+

@@ -30,22 +30,6 @@
 </head>
 <body>
 
-<!--
-<nav class="navbar navbar-expand-md navbar-dark bg-dark mb-3">
-    <div class="container-fluid">
-        <a href="#" class="navbar-brand mr-3"><small>@runningthroughtheheat</small></a>
-        <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarCollapse">
-            <div class="navbar-nav ml-auto">
-                <a href="#" class="nav-item nav-link">Notes</a>
-            </div>
-        </div>
-    </div>    
-</nav>
--->
-
 <div class="container resume">
     <div class="jumbotron shadow p-3 mb-5 bg-white rounded">
       <div class="float_right">
@@ -62,7 +46,6 @@
             <a class="mail_btn sm_btn" href="mailto:anshuchak063@gmail.com"></a>
             <a class="linkedin_btn sm_btn" href="https://www.linkedin.com/in/anshumanchak/"></a>
             <a class="facebook_btn sm_btn" href="https://www.facebook.com/runningthroughtheheat"></a>
-            <!-- <a class="instagramBtn smGlobalBtn" href="#"></a>-->
           </div>
         </p>
       </div>
@@ -150,26 +133,14 @@
             <div class="big">OMDENA <small>• MACHINE LEARNING ENGINEER <br />
             May 2020 - June 2020 • Remote</small>
             </div>
-            <div class="text_align_justify" ><!-- id="open_sidebar">-->
+            <div class="text_align_justify" id="open_sidebar_omdena">
               Applied topic modelling algorithms on extracted reports of Domestic Violence from social 
               media, news articles and government websites to identify trends pre and post lockdown along 
               with demographic information by implementing Named Entity Recognition techniques.<br />
             </div>
-            <p hidden>Scrapy Twitterscraper Doccano NLTK Spacy Scikit-learn Tableau 
-              Data Preprocessing LDA Multilingual Embeddings Text augmentation SMOTE Stacking NER using CRF
-            </p>
-            <!-- SIDEBAR 
-                <div id="chart_bar" class="sidebar">
-                  <div class="canvas_dim padding_top">
-                    <canvas id="my_chart" height="30" width="30"></canvas>
-                  </div>
-                  <div class="text_align_justify default_font padding_top padding_left padding_right">
-                    Applied topic modelling algorithms on extracted reports of Domestic Violence from social
-                    media, news articles and government websites to identify trends pre and post lockdown along
-                    with demographic information by implementing Named Entity Recognition techniques.
-                  </div>
+            <!-- SIDEBAR  -->
+                <div id="chart_bar_omdena" class="sidebar">
                 </div>
-              -->
             <p></p>
 
 
@@ -177,7 +148,7 @@
             May 2019 - July 2019 • Bangalore</small>
             </div>
             
-            <div class="text_align_justify">
+            <div class="text_align_justify" id="open_sidebar_bidgely">
               Performed experiments to cluster similar homes to gain relevant insights, 
               using rules derived from the different house parameters and understanding the UML class 
               and sequence diagrams, i.e. the Object Model which helped in reducing the 
@@ -188,6 +159,11 @@
               Regex Bash Daemons PostgreSQL Log4j Java AWS S3 Redshift 
               Scripting DBMS Columnar Database Parsing
             </p>
+
+            <!-- SIDEBAR  -->
+            <div id="chart_bar_bidgely" class="sidebar">
+            </div>
+
             <p></p>
 
             <div class="big">SCHLUMBERGER <small>• DATA SCIENCE INTERN<br />
@@ -260,5 +236,6 @@
             </div>
         </div>
     </div>
+    <script src="js/sidebar.js"></script>
 </body>
 </html>
