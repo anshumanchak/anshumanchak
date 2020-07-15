@@ -174,7 +174,7 @@ $("html").click(function (event) {
                                     thoroughly enjoyed it. Bidgely provides AI based solutions to Utilities \
                                     to create value for both the end consumers and the service providers.<br />\
                                     I had the opportunity to work on one of their many promising projects, Similar Home \
-                                    Comparison(SHC), which helps Bidgely categories houses in different localities on \
+                                    Comparison(SHC), which helps Bidgely categorize houses in different localities on \
                                     the basis of some predetermined parameters to provide better insights regarding \
                                     the power consumption habits.";
             // Append everything together
