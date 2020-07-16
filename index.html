@@ -24,6 +24,7 @@
   <link rel="stylesheet" href="css/home_style.css">
   <link rel="stylesheet" href="css/sm_buttons.css">
   <base target="_blank" rel="noopener noreferrer">
+  <link rel='icon' href='favicon.ico' type='image/x-icon' />
 
   <title>Anshuman</title>
 
@@ -126,6 +127,9 @@
 
         </div>
 
+        <!-- SIDEBAR  -->
+        <div id="chart_bar" class="sidebar">
+        </div>
 
         <div class="col-md-6 col-lg-6 col-xl-6 float_right padding_left padding_right">
             <h2 class="heading_font">EXPERIENCE</h2>
@@ -138,9 +142,6 @@
               media, news articles and government websites to identify trends pre and post lockdown along 
               with demographic information by implementing Named Entity Recognition techniques.<br />
             </div>
-            <!-- SIDEBAR  -->
-                <div id="chart_bar_omdena" class="sidebar">
-                </div>
             <p></p>
 
 
@@ -155,32 +156,18 @@
               estimated time to run a clustering experiment using derived rules, from 1-2 weeks 
               to within a week through automation.
             </div>
-            <p hidden>
-              Regex Bash Daemons PostgreSQL Log4j Java AWS S3 Redshift 
-              Scripting DBMS Columnar Database Parsing
-            </p>
-
-            <!-- SIDEBAR  -->
-            <div id="chart_bar_bidgely" class="sidebar">
-            </div>
-
             <p></p>
 
             <div class="big">SCHLUMBERGER <small>• DATA SCIENCE INTERN<br />
             May 2018 - July 2018 • Pune</small>
             </div>
             
-            <div class="text_align_justify">
+            <div class="text_align_justify" id="open_sidebar_slb">
               Applied text analytics techniques on 
               Purchase Order(PO) description data for feature representation and used Random 
               Forest Classifier to predict possible Part Number of a product from preprocessed 
               text descriptions which increased the accuracy by 11%.
             </div>
-            <p hidden>
-              Pandas NLTK Gensim Scikit-learn Networkx
-              Bag of Words TF-IDF LSA Skipgram Word2vec Random Forest Bagging Boosting One Class SVM 
-              Isolation Forest Louvain Community Detection
-            </p>
             <p></p>
 
             <div class="big">
@@ -188,15 +175,11 @@
               May 2017 - July 2017 • Kolkata</small>
             </div>
             
-            <div class="text_align_justify">
+            <div class="text_align_justify" id="open_sidebar_iiser">
               Studied the theory behind curve fitting and applied it to derive twelve types of Pearson’s 
               Curves from the ODE for unimodal distributions. Used it to make inferences on a sample dataset 
               based on calculated parameters of the specific curve type which would give us a reasonably good fit for the data.
             </div>
-            <p hidden>
-              Python Numpy Scipy Pandas
-              Skewness Kurtosis Method of Moments Solution of ODEs
-            </p>
             <p></p>
 
             </div>
@@ -207,7 +190,7 @@
             October 2018 </small>
             </div>
             
-            <div class="text_align_justify">
+            <div class="text_align_justify" id="open_sidebar_reddash">
               Built a disaster management dashboard to help rescuers and victims involved in an ongoing 
               calamity. It has 3 main features, a disaster type recognizer for picture uploads, an affected area 
               zone map and an SMS app which facilitates communication between victim and rescuer, also linked 
@@ -222,7 +205,7 @@
             <div class="big">ADLAS <small>• SOFT COMPUTING TOOLS IN ENGINEERING <br />
             Jan 2017 - April 2017 </small>
             </div>
-            <div class="text_align_justify">
+            <div class="text_align_justify" id="open_sidebar_adlas">
               Monitored user behaviour to recognize patterns in how and when one launches and runs a 
               desktop application, and used clustering techniques to group the applications to 
               automate the process of launching them once the intent of the user is detected.

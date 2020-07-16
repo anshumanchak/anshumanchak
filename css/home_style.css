@@ -74,7 +74,24 @@ hr {
 #open_sidebar_omdena {
     cursor: pointer;
 }
+
 #open_sidebar_bidgely {
+    cursor: pointer;
+}
+
+#open_sidebar_slb {
+    cursor: pointer;
+}
+
+#open_sidebar_iiser {
+    cursor: pointer;
+}
+
+#open_sidebar_reddash {
+    cursor: pointer;
+}
+
+#open_sidebar_adlas {
     cursor: pointer;
 }
 

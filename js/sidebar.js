@@ -62,16 +62,16 @@ $("html").click(function (event) {
     var a = event.target;
     if (side_is_open == 0) {
         if (a == open_sidebar_omdena) {
-            chart_bar = document.getElementById("chart_bar_omdena");
+            chart_bar = document.getElementById("chart_bar");
             chart_text.innerHTML = "Data substantiating Domestic Violence from government resources are only available in summary form. \
-                                    Incidents are largely reported via calls, hence making data collection and subsequent mapping difficult." +
-                "<br / >" +
-                "The goal of the challenge was to collect and analyze data from different social media platforms and\
+                                    Incidents are largely reported via calls, hence making data collection and subsequent mapping difficult."
+                                    + "<br / >" + 
+                                    "The goal of the challenge was to collect and analyze data from different social media platforms and\
                                     news sources so as to create a well formed, reliable data source and gain insights on the rise in\
                                     DV incidents during the nationwide lockdown. Links to some awesome articles written by my fellow \
-                                    collaborators are mentioned below :" +
-                "<br />• <a href = 'https://omdena.com/blogs/domestic-violence/'>Twitter Data Analysis</a><br />" +
-                "• <a href='https://medium.com/omdena/analyzing-domestic-violence-during-covid-19-through-natural-language-processing-fe1905de744e'>News Data Analysis</a>";
+                                    collaborators are mentioned below :" + 
+                                    "<br />‣ <a href = 'https://omdena.com/blogs/domestic-violence/'>Twitter Data Analysis</a><br />" +
+                                    "‣ <a href='https://medium.com/omdena/analyzing-domestic-violence-during-covid-19-through-natural-language-processing-fe1905de744e'>News Data Analysis</a>";
             // Append everything together
             canvas_dim1.appendChild(chart1);
             canvas_dim2.appendChild(chart2);
@@ -168,8 +168,9 @@ $("html").click(function (event) {
             });
             openNav(chart_bar);
             side_is_open = 1;
-        } else if (a == open_sidebar_bidgely) {
-            chart_bar = document.getElementById("chart_bar_bidgely");
+        }
+        else if (a == open_sidebar_bidgely) {
+            chart_bar = document.getElementById("chart_bar");
             chart_text.innerHTML = "This was my first time working in a startup environment and I\
                                     thoroughly enjoyed it. Bidgely provides AI based solutions to Utilities \
                                     to create value for both the end consumers and the service providers.<br />\
@@ -231,9 +232,69 @@ $("html").click(function (event) {
             my_doughnut2 = new Chart(ctx2, {
                 type: 'doughnut',
                 data: {
-                    labels: ['Scripting', 'Text Parsing', 'Relational Databases', 'Columnar Databases', 'Computer Networks'],
+                    labels: ['Scripting', 'Text Parsing', 'Relational Databases', 'Columnar Databases', 'Computer Networks','Design Patterns'],
                     datasets: [{
-                        data: [35, 30, 15, 10, 10],
+                        data: [30, 30, 15, 10, 10, 5],
+                        backgroundColor: [
+                            '#FFAAAA',
+                            '#FFCF8E',
+                            '#E6F198',
+                            '#ABFA92',
+                            '#A2EDDE',
+                            '#A6CBFE'
+                        ],
+                        borderColor: [
+                            '#FFAAAA',
+                            '#FFCF8E',
+                            '#E6F198',
+                            '#ABFA92',
+                            '#A2EDDE',
+                            '#A6CBFE'
+                        ],
+                        borderWidth: 1
+                    }]
+                },
+                options: {
+                    cutoutPercentage: 40,
+                    maintainAspectRatio: false,
+                    responsive: true,
+                    legend: {
+                        display: false
+                    },
+                    tooltips: {
+                        callbacks: {
+                            label: function (tooltipItem, data) {
+                                return data['labels'][tooltipItem['index']] + ': ' + data['datasets'][0]['data'][tooltipItem['index']] + '%';
+                            }
+                        }
+                    }
+                }
+            });
+            openNav(chart_bar);
+            side_is_open = 1;
+        }
+        else if (a == open_sidebar_slb) {
+            chart_bar = document.getElementById("chart_bar");
+            chart_text.innerHTML = "This project was at its core a text classification problem with\
+                                    huge number of classes and a highly imbalanced dataset. The main challenge was\
+                                    to build a robust ML pipeline to deal with this imbalance. <br />So, apart from building \
+                                    a classifier I applied outlier detection techniques like One Class SVM algorithm to separate out newly or rarely \
+                                    purchased parts from those which are bought on a daily basis, to reduce the class imbalance.\
+                                    Next, I implemented Louvain Community Detection algorithm to cluster the detected outliers \
+                                    from the previous step and assign part numbers according to their descriptions.";
+            // Append everything together
+            canvas_dim1.appendChild(chart1);
+            canvas_dim2.appendChild(chart2);
+            chart_bar.appendChild(scrolll);
+            chart_bar.appendChild(chart_text);
+            // Make Charts
+            var ctx1 = chart1.getContext('2d');
+            my_doughnut1 = new Chart(ctx1, {
+                type: 'doughnut',
+                data: {
+                    labels: ['Pandas', 'NLTK', 'Gensim', 'Scikit - learn', 'Networkx'],
+                    datasets: [{
+                        data: [35, 15, 5, 35, 10],
                         backgroundColor: [
                             '#FFAAAA',
                             '#FFCF8E',
@@ -267,10 +328,156 @@ $("html").click(function (event) {
                     }
                 }
             });
+            var ctx2 = chart2.getContext('2d');
+            my_doughnut2 = new Chart(ctx2, {
+                type: 'doughnut',
+                data: {
+                    labels: ['Bag of Words', 'TF - IDF', 'LSA', 'Skipgram', 'Word2vec', 'Random Forest', 'Bagging', 'Boosting', 'One Class SVM', 'Isolation Forest', 'Louvain Community Detection'],
+                    datasets: [{
+                        data: [5,10,5,5,15,15,5,10,15,5,10],
+                        backgroundColor: [
+                            '#EF4C4C',
+                            '#F08D57',
+                            '#F3BB59',
+                            '#F7E75D',
+                            '#DCF55E',
+                            '#9FF15F',
+                            '#5FF1A6',
+                            '#62F3DB',
+                            '#62DDF3',
+                            '#6AB9F7',
+                            '#D374F9'
+                        ],
+                        borderColor: [
+                            '#EF4C4C',
+                            '#F08D57',
+                            '#F3BB59',
+                            '#F7E75D',
+                            '#DCF55E',
+                            '#9FF15F',
+                            '#5FF1A6',
+                            '#62F3DB',
+                            '#62DDF3',
+                            '#6AB9F7',
+                            '#D374F9'
+                        ],
+                        borderWidth: 1
+                    }]
+                },
+                options: {
+                    cutoutPercentage: 40,
+                    maintainAspectRatio: false,
+                    responsive: true,
+                    legend: {
+                        display: false
+                    },
+                    tooltips: {
+                        callbacks: {
+                            label: function (tooltipItem, data) {
+                                return data['labels'][tooltipItem['index']] + ': ' + data['datasets'][0]['data'][tooltipItem['index']] + '%';
+                            }
+                        }
+                    }
+                }
+            });
             openNav(chart_bar);
             side_is_open = 1;
         }
-    } else if (side_is_open == 1) {
+        else if (a == open_sidebar_iiser) {
+            chart_bar = document.getElementById("chart_bar");
+            chart_text.innerHTML = "This was my first ever internship experience and also the first time I was being exposed\
+                                    to a research environment. This project focused more on theory and helped me\
+                                    learn many of the basic concepts of statistics and introduced me to the math behind regression.\
+                                    <br />I learned how to make inferences using sample data and classified the same into \
+                                    Pearson's curves based on the calculation of a defined kappa criterion. \
+                                    Eventually, I calculated parameters of the specific curve type which would be a reasonably \
+                                    good fit for the above mentioned sample dataset.";
+            // Append everything together
+            canvas_dim1.appendChild(chart1);
+            canvas_dim2.appendChild(chart2);
+            chart_bar.appendChild(scrolll);
+            chart_bar.appendChild(chart_text);
+            // Make Charts
+            var ctx1 = chart1.getContext('2d');
+            my_doughnut1 = new Chart(ctx1, {
+                type: 'doughnut',
+                data: {
+                    labels: ['Numpy', 'Scipy', 'Pandas', 'Statsmodels'],
+                    datasets: [{
+                        data: [35,30,25,10],
+                        backgroundColor: [
+                            '#FFAAAA',
+                            '#FFCF8E',
+                            '#E6F198',
+                            '#ABFA92'
+                        ],
+                        borderColor: [
+                            '#FFAAAA',
+                            '#FFCF8E',
+                            '#E6F198',
+                            '#ABFA92'
+                        ],
+                        borderWidth: 1
+                    }]
+                },
+                options: {
+                    cutoutPercentage: 40,
+                    maintainAspectRatio: false,
+                    responsive: true,
+                    legend: {
+                        display: false
+                    },
+                    tooltips: {
+                        callbacks: {
+                            label: function (tooltipItem, data) {
+                                return data['labels'][tooltipItem['index']] + ': ' + data['datasets'][0]['data'][tooltipItem['index']] + '%';
+                            }
+                        }
+                    }
+                }
+            });
+            var ctx2 = chart2.getContext('2d');
+            my_doughnut2 = new Chart(ctx2, {
+                type: 'doughnut',
+                data: {
+                    labels: ['Skewness', 'Kurtosis', 'Method of Moments', 'Solution of ODEs'],
+                    datasets: [{
+                        data: [10, 20, 50, 20],
+                        backgroundColor: [
+                            '#FFAAAA',
+                            '#FFCF8E',
+                            '#E6F198',
+                            '#ABFA92'
+                        ],
+                        borderColor: [
+                            '#FFAAAA',
+                            '#FFCF8E',
+                            '#E6F198',
+                            '#ABFA92'
+                        ],
+                        borderWidth: 1
+                    }]
+                },
+                options: {
+                    cutoutPercentage: 40,
+                    maintainAspectRatio: false,
+                    responsive: true,
+                    legend: {
+                        display: false
+                    },
+                    tooltips: {
+                        callbacks: {
+                            label: function (tooltipItem, data) {
+                                return data['labels'][tooltipItem['index']] + ': ' + data['datasets'][0]['data'][tooltipItem['index']] + '%';
+                            }
+                        }
+                    }
+                }
+            });
+            openNav(chart_bar);
+            side_is_open = 1;
+        }
+    }else if (side_is_open == 1) {
         if (!chart_bar.contains(a)) {
             side_is_open = 0;
             closeNav(chart_bar);
