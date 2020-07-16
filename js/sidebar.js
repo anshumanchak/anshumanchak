@@ -24,7 +24,7 @@ canvas_dim2.className = 'canvas_dim';
 var chart1 = document.createElement('canvas');
 var chart2 = document.createElement('canvas');
 var chart_text = document.createElement('div');
-chart_text.className = 'text_align_justify default_font padding_top padding_left padding_right';
+chart_text.className = 'text_align_justify responsive_font padding_top padding_left padding_right';
 
 // Finally append the whole thing to sidebar
 // By checking what element is clicked

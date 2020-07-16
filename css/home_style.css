@@ -64,6 +64,9 @@ hr {
 .default_font {
     font-size: 1rem;
 }
+.responsive_font {
+    font-size: 2.6vh;
+}
 
 .big {
     font-size: 1.2rem;
