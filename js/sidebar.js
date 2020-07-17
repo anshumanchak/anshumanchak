@@ -479,6 +479,208 @@ $("html").click(function (event) {
             openNav(chart_bar);
             side_is_open = 1;
         }
+        else if (a == open_sidebar_reddash) {
+            chart_bar = document.getElementById("chart_bar");
+            chart_text.innerHTML = "This was part of our submission for Microsoft Code Fun Do ++, 2018-19, wherein we managed \
+                                    to bag the Campus Runners Up Prize. <br />For the admin side dashboard, we used the Azure Custom \
+                                    Vision API to predict whether an uploaded image depicted a natural disaster, \
+                                    trained on flood images as of now. \
+                                    For the Zone map, we scraped geocode data from NRT Global Flood Mapping of areas under \
+                                    danger and represented it on a map on the dashboard using plotly. Lastly, we \
+                                    built an SMS app to facilitate communication between victim and rescuer \
+                                    using Twilio API, and linked it with the main dashboard.";
+            // Append everything together
+            canvas_dim1.appendChild(chart1);
+            canvas_dim2.appendChild(chart2);
+            chart_bar.appendChild(scrolll);
+            chart_bar.appendChild(chart_text);
+            // Make Charts
+            var ctx1 = chart1.getContext('2d');
+            my_doughnut1 = new Chart(ctx1, {
+                type: 'doughnut',
+                data: {
+                    labels: ['HTML', 'CSS', 'Javascript', 'Flask', 'Azure Custom Vision API', 'Beautiful Soup', 'Plotly', 'Twilio API'],
+                    datasets: [{
+                        data: [5,10,10,20,15,5,20,15],
+                        backgroundColor: [
+                            '#EF4C4C',
+                            '#F08D57',
+                            '#F3BB59',
+                            '#F7E75D',
+                            '#DCF55E',
+                            '#9FF15F',
+                            '#5FF1A6',
+                            '#62F3DB'
+                        ],
+                        borderColor: [
+                            '#EF4C4C',
+                            '#F08D57',
+                            '#F3BB59',
+                            '#F7E75D',
+                            '#DCF55E',
+                            '#9FF15F',
+                            '#5FF1A6',
+                            '#62F3DB'
+                        ],
+                        borderWidth: 1
+                    }]
+                },
+                options: {
+                    cutoutPercentage: 40,
+                    maintainAspectRatio: false,
+                    responsive: true,
+                    legend: {
+                        display: false
+                    },
+                    tooltips: {
+                        callbacks: {
+                            label: function (tooltipItem, data) {
+                                return data['labels'][tooltipItem['index']] + ': ' + data['datasets'][0]['data'][tooltipItem['index']] + '%';
+                            }
+                        }
+                    }
+                }
+            });
+            var ctx2 = chart2.getContext('2d');
+            my_doughnut2 = new Chart(ctx2, {
+                type: 'doughnut',
+                data: {
+                    labels: ['UI / UX', 'Image Recognition', 'Web Scraping', 'Data Visualization', 'Backend Dev'],
+                    datasets: [{
+                        data: [10, 20, 30, 20, 20],
+                        backgroundColor: [
+                            '#EF4C4C',
+                            '#F08D57',
+                            '#F3BB59',
+                            '#F7E75D',
+                            '#DCF55E'
+                        ],
+                        borderColor: [
+                            '#EF4C4C',
+                            '#F08D57',
+                            '#F3BB59',
+                            '#F7E75D',
+                            '#DCF55E'
+                        ],
+                        borderWidth: 1
+                    }]
+                },
+                options: {
+                    cutoutPercentage: 40,
+                    maintainAspectRatio: false,
+                    responsive: true,
+                    legend: {
+                        display: false
+                    },
+                    tooltips: {
+                        callbacks: {
+                            label: function (tooltipItem, data) {
+                                return data['labels'][tooltipItem['index']] + ': ' + data['datasets'][0]['data'][tooltipItem['index']] + '%';
+                            }
+                        }
+                    }
+                }
+            });
+            openNav(chart_bar);
+            side_is_open = 1;
+        }
+        else if (a == open_sidebar_adlas) {
+            chart_bar = document.getElementById("chart_bar");
+            chart_text.innerHTML = "This project was part of my Soft Computing course in the fourth semester of college, for which we \
+                                    were selected as the Best Project by points tally. <br />\
+                                    Our aim was to build a bot which would help smoothen the desktop apps experience. \
+                                    We monitored user behaviour and recorded timestamps of when one launches and runs applications, \
+                                    to discover intent of a user. For example watching a movie on VLC would be an intent, programming \
+                                    using Sublime Text would be another. \
+                                    As none of us had proper industry exposure then, we used Self Organizing Feature Maps from MATLAB \
+                                    toolbox for clustering the applications. Finally, we were able to automate the process of \
+                                    launching applications which belonged to the same cluster, once the intent of the user was detected, \
+                                    using python and shell for scripting.";
+            // Append everything together
+            canvas_dim1.appendChild(chart1);
+            canvas_dim2.appendChild(chart2);
+            chart_bar.appendChild(scrolll);
+            chart_bar.appendChild(chart_text);
+            // Make Charts
+            var ctx1 = chart1.getContext('2d');
+            my_doughnut1 = new Chart(ctx1, {
+                type: 'doughnut',
+                data: {
+                    labels: ['Powershell', 'MATLAB', 'Python', 'Tkinter' ],
+                    datasets: [{
+                        data: [35, 30, 25, 10],
+                        backgroundColor: [
+                            '#FFAAAA',
+                            '#FFCF8E',
+                            '#E6F198',
+                            '#ABFA92'
+                        ],
+                        borderColor: [
+                            '#FFAAAA',
+                            '#FFCF8E',
+                            '#E6F198',
+                            '#ABFA92'
+                        ],
+                        borderWidth: 1
+                    }]
+                },
+                options: {
+                    cutoutPercentage: 40,
+                    maintainAspectRatio: false,
+                    responsive: true,
+                    legend: {
+                        display: false
+                    },
+                    tooltips: {
+                        callbacks: {
+                            label: function (tooltipItem, data) {
+                                return data['labels'][tooltipItem['index']] + ': ' + data['datasets'][0]['data'][tooltipItem['index']] + '%';
+                            }
+                        }
+                    }
+                }
+            });
+            var ctx2 = chart2.getContext('2d');
+            my_doughnut2 = new Chart(ctx2, {
+                type: 'doughnut',
+                data: {
+                    labels: ['Clustering', 'Self Organizing Feature Maps', 'Shell Scripting', 'Desktop apps UI'],
+                    datasets: [{
+                        data: [10, 40, 40, 10],
+                        backgroundColor: [
+                            '#FFAAAA',
+                            '#FFCF8E',
+                            '#E6F198',
+                            '#ABFA92'
+                        ],
+                        borderColor: [
+                            '#FFAAAA',
+                            '#FFCF8E',
+                            '#E6F198',
+                            '#ABFA92'
+                        ],
+                        borderWidth: 1
+                    }]
+                },
+                options: {
+                    cutoutPercentage: 40,
+                    maintainAspectRatio: false,
+                    responsive: true,
+                    legend: {
+                        display: false
+                    },
+                    tooltips: {
+                        callbacks: {
+                            label: function (tooltipItem, data) {
+                                return data['labels'][tooltipItem['index']] + ': ' + data['datasets'][0]['data'][tooltipItem['index']] + '%';
+                            }
+                        }
+                    }
+                }
+            });
+            openNav(chart_bar);
+            side_is_open = 1;
+        }
     }else if (side_is_open == 1) {
         if (!chart_bar.contains(a)) {
             side_is_open = 0;

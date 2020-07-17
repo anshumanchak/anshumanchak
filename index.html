@@ -23,7 +23,6 @@
   <!-- Custom -->
   <link rel="stylesheet" href="css/home_style.css">
   <link rel="stylesheet" href="css/sm_buttons.css">
-  <base target="_blank" rel="noopener noreferrer">
   <link rel='icon' href='favicon.ico?' type='image/x-icon' />
 
   <title>Anshuman</title>
@@ -42,11 +41,12 @@
         <h1 class="heading_font">Anshuman Chakravarty</h1>
         <p class="lead">
           <div id="social">
-            <a class="twitter_btn sm_btn" href="https://twitter.com/anshumanchak"></a>
-            <a class="github_btn sm_btn" href="https://github.com/anshumanchak"></a>
-            <a class="mail_btn sm_btn" href="mailto:anshuchak063@gmail.com"></a>
-            <a class="linkedin_btn sm_btn" href="https://www.linkedin.com/in/anshumanchak/"></a>
-            <a class="facebook_btn sm_btn" href="https://www.facebook.com/runningthroughtheheat"></a>
+            <a class="twitter_btn sm_btn" href="https://twitter.com/anshumanchak" target="_blank"></a>
+            <a class="github_btn sm_btn" href="https://github.com/anshumanchak" target="_blank"></a>
+            <a class="mail_btn sm_btn js-tooltip js-copy" data-placement="bottom" data-copy="anshuchak063@gmail.com"
+              title="anshuchak063@gmail.com" data-toggle="tooltip" href=" javascript:void(0)"></a>
+            <a class="linkedin_btn sm_btn" href="https://www.linkedin.com/in/anshumanchak/" target="_blank"></a>
+            <a class="facebook_btn sm_btn" href="https://www.facebook.com/runningthroughtheheat" target="_blank"></a>
           </div>
         </p>
       </div>
@@ -220,5 +220,42 @@
         </div>
     </div>
     <script src="js/sidebar.js"></script>
+    <script>
+      function copyToClipboard(text, el) {
+      var copyTest = document.queryCommandSupported('copy');
+      var elOriginalText = el.attr('data-original-title');
+
+      if (copyTest === true) {
+      var copyTextArea = document.createElement("textarea");
+      copyTextArea.value = text;
+      document.body.appendChild(copyTextArea);
+      copyTextArea.select();
+      try {
+        var successful = document.execCommand('copy');
+        var msg = successful ? 'Email copied to Clipboard!' : 'Whoops, not copied!';
+        el.attr('data-original-title', msg).tooltip('show');
+      } catch (err) {
+        console.log('Oops, unable to copy');
+      }
+      document.body.removeChild(copyTextArea);
+      el.attr('data-original-title', elOriginalText);
+      } else {
+      // Fallback if browser doesn't support .execCommand('copy')
+      window.prompt("Copy to clipboard: Ctrl+C or Command+C, Enter", text);
+      }
+      }
+
+      $(document).ready(function() {
+      // Tooltips
+      $('.js-tooltip').tooltip();
+      // Grab any text in the attribute 'data-copy' and pass it
+      $('.js-copy').click(function() {
+      var text = $(this).attr('data-copy');
+      var el = $(this);
+      copyToClipboard(text, el);
+      });
+      });
+
+    </script>
 </body>
 </html>
