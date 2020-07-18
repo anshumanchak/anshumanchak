@@ -1,6 +1,6 @@
 body {
     background-color: #e8e8e8;
-    font-family: Lato, Arial, Helvetica, sans-serif;
+    font-family: 'Mulish','Roboto',sans-serif;
     margin: 0;
     padding: 0;
 }
@@ -35,7 +35,7 @@ hr {
 }
 
 .heading_font {
-    font-family: Raleway, Arial, Helvetica, sans-serif;
+    font-family: Raleway, sans-serif;
     font-weight: 50;
 }
 
@@ -137,7 +137,7 @@ hr {
 }
 
 .sidebar_head2 {
-    font-family: Raleway, Arial, Helvetica, sans-serif;
+    font-family: Raleway, sans-serif;
     font-weight: bold;
 }
 

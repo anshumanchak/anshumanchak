@@ -65,15 +65,14 @@ $("html").click(function (event) {
     if (side_is_open == 0) {
         if (a == open_sidebar_omdena) {
             chart_bar = document.getElementById("chart_bar");
-            chart_text.innerHTML = "Data substantiating Domestic Violence from government resources are only available in summary form. \
-                                    Incidents are largely reported via calls, hence making data collection and subsequent mapping difficult."
-                                    + "<br / >" + 
-                                    "The goal of the challenge was to collect and analyze data from different social media platforms and\
+            chart_text.innerHTML = "One of the most positive things I have done in these difficult times of the Covid-19 Pandemic \
+                                    is this AI for Good initiative with Omdena and Reddot Foundation. <br />\
+                                    The goal of the challenge was to collect and analyze data from different social media platforms and\
                                     news sources so as to create a well formed, reliable data source and gain insights on the rise in\
                                     DV incidents during the nationwide lockdown. Links to some awesome articles written by my fellow \
-                                    collaborators are mentioned below :" + 
-                                    "<br />‣ <a href = 'https://omdena.com/blogs/domestic-violence/'>Twitter Data Analysis</a><br />" +
-                                    "‣ <a href='https://medium.com/omdena/analyzing-domestic-violence-during-covid-19-through-natural-language-processing-fe1905de744e'>News Data Analysis</a>";
+                                    collaborators are mentioned below :\
+                                    <br />‣ <a href = 'https://omdena.com/blogs/domestic-violence/'>Twitter Data Analysis</a><br />\
+                                    ‣ <a href='https://medium.com/omdena/analyzing-domestic-violence-during-covid-19-through-natural-language-processing-fe1905de744e'>News Data Analysis</a>";
             // Append everything together
             canvas_dim1.appendChild(chart1);
             canvas_dim2.appendChild(chart2);
@@ -176,7 +175,7 @@ $("html").click(function (event) {
             chart_text.innerHTML = "This was my first time working in a startup environment and I\
                                     thoroughly enjoyed it. Bidgely provides AI based solutions to Utilities \
                                     to create value for both the end consumers and the service providers.<br />\
-                                    I had the opportunity to work on one of their many promising projects, Similar Home \
+                                    I had the opportunity to work on the backend of one of their many promising projects, Similar Home \
                                     Comparison(SHC), which helps Bidgely categorize houses in different localities on \
                                     the basis of some predetermined parameters to provide better insights regarding \
                                     the power consumption habits.";
@@ -387,7 +386,7 @@ $("html").click(function (event) {
         }
         else if (a == open_sidebar_iiser) {
             chart_bar = document.getElementById("chart_bar");
-            chart_text.innerHTML = "This was my first ever internship experience and also the first time I was being exposed\
+            chart_text.innerHTML = "This can be regarded as my first ever internship experience and also the first time I was being exposed\
                                     to a research environment. This project focused more on theory and helped me\
                                     learn many of the basic concepts of statistics and introduced me to the math behind regression.\
                                     <br />I learned how to make inferences using sample data and classified the same into \
