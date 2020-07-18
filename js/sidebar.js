@@ -24,7 +24,7 @@ canvas_dim2.className = 'canvas_dim';
 var chart1 = document.createElement('canvas');
 var chart2 = document.createElement('canvas');
 var chart_text = document.createElement('div');
-chart_text.className = 'text_align_justify padding_top padding_left padding_right';
+chart_text.className = 'text_align_justify padding_top padding_left padding_right margin_top';
 
 // Finally append the whole thing to sidebar
 // By checking what element is clicked
@@ -65,7 +65,7 @@ $("html").click(function (event) {
     if (side_is_open == 0) {
         if (a == open_sidebar_omdena) {
             chart_bar = document.getElementById("chart_bar");
-            chart_text.innerHTML = "One of the most positive things I have done in these difficult times of the Covid-19 Pandemic \
+            chart_text.innerHTML = "One of the most positive things I have done in these difficult times of the Covid-19 pandemic \
                                     is this AI for Good initiative with Omdena and Reddot Foundation. <br />\
                                     The goal of the challenge was to collect and analyze data from different social media platforms and\
                                     news sources so as to create a well formed, reliable data source and gain insights on the rise in\

@@ -60,6 +60,9 @@ hr {
 .padding_top {
     padding-top: 0.5rem;
 }
+.margin_top{
+    margin-top: 0.5rem;
+}
 
 .default_font {
     font-size: 1rem;
@@ -113,7 +116,7 @@ hr {
     height: 42vh;
     padding-left: 1rem;
     padding-right: 1rem;
-    padding-bottom: 1.3rem;
+    padding-bottom: 1.8rem;
 }
 
 .chart_scroll {
