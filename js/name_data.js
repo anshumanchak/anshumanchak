@@ -1,5 +1,5 @@
 function populate_name(layout) {
-    layout.chart_text.innerHTML = "Hi 👋 &nbsp I am Anshuman Chakravarty, a recent graduate from \
+    layout.chart_text.innerHTML = "Hi 👋 I am Anshuman Chakravarty, a recent graduate from \
                                     IIT Kharagpur, all set to start a new phase of my life - working as \
                                     a Data Scientist.<br /><br />\
                                     <p align='center'> Present State = Excitement + Nervousness</p>\
