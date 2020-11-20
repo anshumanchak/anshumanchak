@@ -20,6 +20,7 @@ hr {
 
 .float_right {
     float: right;
+    clear: both;
 }
 
 .float_left {
@@ -29,7 +30,9 @@ hr {
 .text_align_justify {
     text-align: justify;
 }
-
+.text_align_center {
+    text-align: center;
+}
 .heading_style {
     text-align: center;
 }
@@ -41,8 +44,8 @@ hr {
 
 .download_btn {
     color: #b9bcc9;
-    padding: 1rem 1.3rem;
-    font-size: 1.4rem;
+    padding: 0.3rem 1rem 0 0;
+    font-size: 1.1rem;
 }
 
 .download_btn:hover {
@@ -71,8 +74,6 @@ hr {
 .big {
     font-size: 1.2rem;
 }
-
-
 
 #open_sidebar_omdena {
     cursor: pointer;
@@ -166,3 +167,69 @@ img {
     height: 100%;
     object-fit: contain;
 }
+
+
+#dp{
+    width: 10rem;
+    border-style: solid;
+    border-width: 0.16rem;
+    border-color: #b0b0b0;
+    border-radius: 5rem;
+    
+}
+@media screen and (min-width: 270px) {
+    #dp_div {
+        position: absolute;
+        margin-top: -6.3rem;
+        margin-left: 22%;
+    }
+}
+
+@media screen and (min-width: 440px) {
+    #dp_div {
+        position: absolute;
+        margin-top: -6.3rem;
+        margin-left: 24%;
+    }
+}
+
+@media screen and (min-width: 490px) {
+    #dp_div {
+        position: absolute;
+        margin-top: -6.3rem;
+        margin-left: 27%;
+    }
+}
+
+@media screen and (min-width: 576px) {
+    #dp_div {
+        position: absolute;
+        margin-top: -6.3rem;
+        margin-left: 8.8rem;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    #dp_div {
+        position: absolute;
+        margin-top: -6.3rem;
+        margin-left: 14.6rem;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    #dp_div {
+        position: absolute;
+        margin-top: -6.3rem;
+        margin-left: 22rem;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    #dp_div {
+        position: absolute;
+        margin-top: -6.3rem;
+        margin-left: 27.5rem;
+    }
+}
+

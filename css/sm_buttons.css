@@ -38,6 +38,13 @@
     border-color: black;
 }
 
+
+.d_btn:hover {
+    color: #6F7C51;
+    background: #fff;
+    border-color: black;
+}
+
 .twitter_btn:before {
     font-family: "FontAwesome";
     content: "\f099";

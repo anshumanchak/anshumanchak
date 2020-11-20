@@ -31,14 +31,27 @@
 <body>
 
 <div class="container resume">
-    <div class="jumbotron shadow p-3 mb-5 bg-white rounded">
-      <div class="float_right">
-        <a href="Resume.pdf" download target="_blank">
-          <i class="fa fa-download download_btn"></i>
-        </a>
+    <div class="jumbotron shadow p-3 mb-5 bg-white rounded" style="position: relative; margin-top: 6rem; ">
+      <div id="dp_div">
+        <img id="dp" src="images/dp.jpg">
       </div>
-      <div class="heading_style">
-        <h1 class="heading_font" id="open_sidebar_name">Anshuman Chakravarty</h1>
+
+      <div class="float_right text_align_center">
+        <div>
+          <a href="about.html"><i class="fa fa-user download_btn" aria-hidden="true"></i></a>
+        </div>
+        <div>
+          <a href="blog.html"><i class="fa fa-pencil-square download_btn" aria-hidden="true"></i></a>
+        </div>
+        <div>
+          <a href="http://disag.herokuapp.com/"><i class="fa fa-folder download_btn" aria-hidden="true"></i></a>
+        </div>
+        <div>
+          <a href="resume.html"><i class="fa fa-address-card-o download_btn" aria-hidden="true"></i></a>
+        </div>
+      </div>
+
+      <div class="heading_style" style="margin-top: 4.7rem;">
         <p class="lead">
           <div id="social">
             <a class="twitter_btn sm_btn" href="https://twitter.com/anshumanchak" target="_blank"></a>
@@ -50,158 +63,18 @@
           </div>
         </p>
       </div>
-    <hr><br />
+    <hr>
     <div class="row">
-      <div class="col-md-6 col-lg-6 col-xl-6 float_left default_font padding_right padding_left">
-        <h2 class="heading_font">EDUCATION</h2>
-        <div>
-          <div class="big"> IIT KHARAGPUR</div>
-          Integrated MS in Mathematics and Computing <br />
-          Batch of 2020 <br />
-          CGPA <strong>8.68</strong> (out of 10)
-        </div>
-        <p></p>
-        <div>
-          <div class="big">D.A.V. MODEL SCHOOL</div>
-          Batch of 2015 <br />
-          Class 12 CBSE : <strong>96.4 %</strong>
-        </div>
-        <p></p>
-        <h2 class="heading_font">COURSEWORK</h2>
-        <div class="default_font">
-          <strong>STATISTICS</strong><br />
-          Probability and Statistics<br />
-          Statistical Inference<br />
-          Computational Statistics<br />
-          Regression and Time Series<br />
-          Stochastic Processes
-          <p></p>
-          <strong>CS</strong><br />
-          Design and Analysis of Algorithms<br />
-          Object Oriented Systems Design<br />
-          Database Systems<br />
-          <!--Operating Systems <br/>-->
-          Computer Networks<span class="math inline">\(^{\ast}\)</span>
-          <p></p>
-          <strong>MISCELLANEOUS</strong><br />
-          Linear Algebra<br />
-          Operations Research<br />
-          Optimization Techniques<br />
-          Multiobjective Programming<span class="math inline">\(^{\ast}\)</span>
-          <p></p>
-        </div>
-        <h2 class="heading_font">SKILLS</h2>
-        <div class="default_font">
-          <strong>PROGRAMMING</strong><br />
-          <div class="big">
-            Bash &nbsp Git &nbsp C++ &nbsp SQL &nbsp Tableau<br />
-            Numpy &nbsp Pandas &nbsp Scikit-learn<br />
-            NLTK &nbsp Flask &nbsp AWS (S3, Redshift)
-          </div>
-          <p></p>
-        </div>
-        <h2 class="heading_font">COMPETITIONS</h2>
-        <div class="default_font">
-          <p>
-            <strong>Coding Hackathon Inter-IIT Tech Meet</strong><br />
-            <span><strong>Winners</strong></span>, December 2019
-          </p>
-          <p>
-            <strong>Excavate Data Science Challenge</strong><br />
-            <span><strong>Winners</strong></span>, March 2018
-          </p>
-          <p>
-            <strong>Accenture Innovation Jockeys Season 5</strong><br />
-            <span><strong>Winners</strong></span>, October 2016
-            <br /><em>Category</em> - Detecting Fraud and preventing <br />Business Malpractice
-          </p>
-        </div>
-
-      </div>
-      <!-- SIDEBAR  -->
-      <div id="chart_bar" class="sidebar">
-      </div>
-
-      <div class="col-md-6 col-lg-6 col-xl-6 float_right padding_left padding_right">
-        <h2 class="heading_font">EXPERIENCE</h2>
-        <div class="default_font">
-          <div class="big">OMDENA <small>• MACHINE LEARNING ENGINEER <br />
-          May 2020 - June 2020 • Remote</small>
-          </div>
-          <div class="text_align_justify" id="open_sidebar_omdena">
-              Applied topic modelling algorithms on extracted reports of Domestic Violence from social 
-              media, news articles and government websites to identify trends pre and post lockdown along 
-              with demographic information by implementing Named Entity Recognition techniques.<br />
-          </div>
-          <p></p>
-          <div class="big">BIDGELY<small>• SOFTWARE ENGINEERING INTERN<br />
-            May 2019 - July 2019 • Bangalore</small>
-          </div>
-          <div class="text_align_justify" id="open_sidebar_bidgely">
-              Performed experiments to cluster similar homes to gain relevant insights, 
-              using rules derived from the different house parameters and understanding the UML class 
-              and sequence diagrams, i.e. the Object Model which helped in reducing the 
-              estimated time to run a clustering experiment using derived rules, from 1-2 weeks 
-              to within a week through automation.
-          </div>
-          <p></p>
-          <div class="big">SCHLUMBERGER <small>• DATA SCIENCE INTERN<br />
-            May 2018 - July 2018 • Pune</small>
-          </div>
-          <div class="text_align_justify" id="open_sidebar_slb">
-              Applied text analytics techniques on 
-              Purchase Order description data for feature representation and used Random 
-              Forest Classifier to predict possible Part Number of a product from preprocessed 
-              text descriptions which increased the accuracy by 11%.
-          </div>
-          <p></p>
-          <div class="big">
-              IISER KOLKATA <small>• RESEARCH INTERN<br />
-              May 2017 - July 2017 • Kolkata</small>
-          </div>
-          <div class="text_align_justify" id="open_sidebar_iiser">
-              Studied the theory behind curve fitting and applied it to derive twelve types of Pearson’s 
-              Curves from the ODE for unimodal distributions. Used it to make inferences on a sample dataset 
-              based on calculated parameters of the specific curve type which would give us a reasonably good fit for the data.
-          </div>
-          <p></p>
-        </div>
-
-        <h2 class="heading_font">PROJECTS</h2>
-        <div class="default_font">
-          <div class="big">REDDASH <small> • MICROSOFT CODE FUN DO <br />
-            October 2018 </small>
-          </div>
-          <div class="text_align_justify" id="open_sidebar_reddash">
-              Built a disaster management dashboard to help rescuers and victims involved in an ongoing 
-              calamity. It has 3 main features, a disaster type recognizer for picture uploads, an affected area 
-              zone map and an SMS app which facilitates communication between victim and rescuer, also linked 
-              with the main web dashboard.
-          </div>
-          <p></p>
-          <div class="big">ADLAS <small>• SOFT COMPUTING TOOLS IN ENGINEERING <br />
-            Jan 2017 - April 2017 </small>
-          </div>
-          <div class="text_align_justify" id="open_sidebar_adlas">
-              Monitored user behaviour to recognize patterns in how and when one launches and runs a 
-              desktop application, and used clustering techniques to group the applications to 
-              automate the process of launching them once the intent of the user is detected.
-          </div>
-          <p></p>
-        </div>
+      <div class="default_font padding_right padding_left text_align_justify">
+        <span style="font-size: 1.1rem;">I'm Anshuman,</span> a fledgling data scientist working at Schlumberger, Pune India Technology Centre,
+        since August 2020. My interests lie along the lines of Time Series Analysis and Natural Language Processing.
+        Problems involving concepts of forecasting both smooth and erratic data, topic modeling, named entity
+        recognition and text classifaction are things I've been involved with in the past. <br />
+        I love learning new technologies to deploy end to end AI based solutions and engaging in the whole maintenance process. Cloud is playing a very important role in this product lifecycle management, giving rise to a new paradigm in software development - MLOps. I'm excited to dive a little deeper into this side of the picture in the future. As of now, I'm getting my hands dirty in the vision side of things, learning more about object detection algorithms and implementing them. I hope to gain some experience in this domain and build exciting stuff with the knowledge.
       </div>
     </div>
+  </div>
+</div>
     <script src="js/clipboard.js"></script>
-    <script src="js/sidebar_layout_projects.js"></script>
-    <script src="js/sidebar_layout_name.js"></script>
-    <script src="js/sidebar_motion.js"></script>
-    <script src="js/omdena_data.js"></script>
-    <script src="js/bidgely_data.js"></script>
-    <script src="js/slb_data.js"></script>
-    <script src="js/iiser_data.js"></script>
-    <script src="js/reddash_data.js"></script>
-    <script src="js/adlas_data.js"></script>
-    <script src="js/name_data.js"></script>
-    <script src="js/sidebar_logic.js"></script>
 </body>
 </html>
