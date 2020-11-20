@@ -1,9 +1,9 @@
 function populate_name(layout) {
     layout.chart_text.innerHTML = "Hi 👋 I am Anshuman, a recent graduate from \
-                                    IIT Kharagpur, all set to start a new phase of my life - working as \
+                                    IIT Kharagpur, starting a new phase of my life - working as \
                                     a Data Scientist.<br /><br />\
                                     <p align='center'> Present State = Excitement + Nervousness</p>\
-                                    My interests lie mainly in NLP and inferential statistics. I also like \
+                                    My interests lie mainly in NLP and time series analysis. I also like \
                                     developing end to end AI solutions or products \
                                     i.e. deploying ML models is just as exciting as building them, if not more.\
                                     But I'm still learning everything. Newbie here.<br />\
