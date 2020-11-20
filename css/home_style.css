@@ -177,22 +177,31 @@ img {
     border-radius: 5rem;
     
 }
+
 @media screen and (min-width: 270px) {
     #dp_div {
         position: absolute;
         margin-top: -6.3rem;
-        margin-left: 17%;
+        margin-left: 12%;
+    }
+}
+
+@media screen and (min-width: 340px) {
+    #dp_div {
+        position: absolute;
+        margin-top: -6.3rem;
+        margin-left: 16%;
     }
 }
 @media screen and (min-width: 380px) {
     #dp_div {
         position: absolute;
         margin-top: -6.3rem;
-        margin-left: 20%;
+        margin-left: 19%;
     }
 }
 
-@media screen and (min-width: 440px) {
+@media screen and (min-width: 430px) {
     #dp_div {
         position: absolute;
         margin-top: -6.3rem;
@@ -200,7 +209,7 @@ img {
     }
 }
 
-@media screen and (min-width: 490px) {
+@media screen and (min-width: 510px) {
     #dp_div {
         position: absolute;
         margin-top: -6.3rem;
