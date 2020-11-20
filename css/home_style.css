@@ -181,7 +181,14 @@ img {
     #dp_div {
         position: absolute;
         margin-top: -6.3rem;
-        margin-left: 22%;
+        margin-left: 17%;
+    }
+}
+@media screen and (min-width: 380px) {
+    #dp_div {
+        position: absolute;
+        margin-top: -6.3rem;
+        margin-left: 20%;
     }
 }
 
